@@ -15,7 +15,7 @@ const Button = styled.button`
     font-weight: 700;
 `
 
-export default function Jogo({level, guessedCharacters, targetWord, newWordCallback}) {
+export default function Jogo({level, guessedCharacters, targetWord, newWordCallback, wData}) {
 
     return (
         <div className="game">
@@ -24,7 +24,7 @@ export default function Jogo({level, guessedCharacters, targetWord, newWordCallb
                 <Button onClick={newWordCallback} className="pickWord">
                     Escolher Palavra
                 </Button> 
-                <WordDisplay targetWord={targetWord} guessedCharacters={guessedCharacters}></WordDisplay>
+                <WordDisplay targetWord={targetWord} wData={wData} guessedCharacters={guessedCharacters}></WordDisplay>
             </div>
         </div> 
 
