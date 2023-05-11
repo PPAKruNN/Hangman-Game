@@ -1,8 +1,8 @@
 import f0 from "../../img/assets/forca0.png"
 import f1 from "../../img/assets/forca1.png"
-import f2 from"../../img/assets/forca3.png"
-import f3 from"../../img/assets/forca4.png"
-import f4 from"../../img/assets/forca2.png"
+import f2 from"../../img/assets/forca2.png"
+import f3 from"../../img/assets/forca3.png"
+import f4 from"../../img/assets/forca4.png"
 import f5 from"../../img/assets/forca5.png"
 import f6 from"../../img/assets/forca6.png"
 

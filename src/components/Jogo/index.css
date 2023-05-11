@@ -1,5 +1,15 @@
 .game {
     width: 100%;
-    background-color: red;
-    height: 200px;
+    height: 400px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.UI {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    align-items: flex-end;
 }
