@@ -1,7 +1,6 @@
 import Forca from "../Forca/index"
 import styled from "styled-components"
 import WordDisplay from "../WordDisplay"
-import "./index.css"
 
 const Button = styled.button`
     background: #27AE60;
@@ -14,19 +13,34 @@ const Button = styled.button`
     line-height: 24px;
     font-weight: 700;
 `
+const Game = styled.div`
+    width: 100%;
+    height: 400px;
+
+    display: flex;
+    justify-content: space-between;
+`
+
+const UI = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    align-items: flex-end;
+`
 
 export default function Jogo({level, guessedCharacters, targetWord, newWordCallback, wData}) {
 
     return (
-        <div className="game">
+        <Game>
             <Forca level={level}></Forca>
-            <div className="UI">
+            <UI>
                 <Button onClick={newWordCallback} className="pickWord">
                     Escolher Palavra
                 </Button> 
                 <WordDisplay targetWord={targetWord} wData={wData} guessedCharacters={guessedCharacters}></WordDisplay>
-            </div>
-        </div> 
+            </UI>
+        </Game> 
 
     )
 
