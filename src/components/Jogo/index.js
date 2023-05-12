@@ -12,6 +12,12 @@ const Button = styled.button`
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
+
+    transition-duration: 0.1s;
+
+    &:hover {
+        background-color: #1d8448;
+    }
 `
 const Game = styled.div`
     width: 100%;

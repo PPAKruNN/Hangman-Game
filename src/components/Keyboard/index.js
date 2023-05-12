@@ -13,7 +13,7 @@ const Key = styled.button`
 
     border: 1px solid #7aa7c7;
     border-radius: 3px;
-    background-color: "#E1ECF4";
+    background-color: #E1ECF4;
     color: #39739D;
 
     &:disabled{
@@ -23,13 +23,18 @@ const Key = styled.button`
 `
 const Row = styled.div`
     display: flex;
-    gap: 12px;
+    gap: 16px;
 `
 
 const StyledKeyboard = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 16px;
+
+    margin-top: 20px;
+    padding: 35px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 `
 
 export default function Keyboard({usedCharacters, keyCallback}) {

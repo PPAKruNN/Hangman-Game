@@ -8,11 +8,15 @@ const alfabeto = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m
 
 const StyledApp = styled.div`
   max-width: 1000px;
-  min-width: 700px;
+  min-width: 500px;
   
   display: flex;
   flex-direction: column;
   
+  margin-top: 20px;
+  padding: 35px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
   `
 
 function App() {
