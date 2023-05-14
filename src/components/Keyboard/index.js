@@ -54,7 +54,7 @@ export default function Keyboard({usedCharacters, keyCallback}) {
             const currChar = alfabeto[i];
             const isDisabled = usedCharacters.includes(currChar)
             
-            arr.push(<Key key={i} onClick={ () => {keyCallback(currChar)}} disabled={isDisabled}> {currChar} </Key>)    
+            arr.push(<Key data-test="letter" key={i} onClick={ () => {keyCallback(currChar)}} disabled={isDisabled}> {currChar} </Key>)    
         }
 
         return arr;

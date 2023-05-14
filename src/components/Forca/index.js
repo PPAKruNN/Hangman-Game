@@ -20,7 +20,7 @@ export default function Forca({level = 0}) {
     // props.level == corresponde a imagem que a forca ira exibir! (Padrao = 0);
 
     return (
-        <StyledForca src={levelImages[level]} alt="Forca"></StyledForca>
+        <StyledForca data-test="game-image" src={levelImages[level]} alt="Forca"></StyledForca>
     ) 
 
 }

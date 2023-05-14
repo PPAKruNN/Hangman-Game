@@ -80,9 +80,9 @@ function App() {
     });
   }
 
-
+  // acho legal adicionar um eventkeylistener em cada key pra usar o teclado
   return (
-    <StyledApp>
+    <StyledApp> 
       <Jogo wData={wData} level={forcaLevel} guessedCharacters={guessedCharacters} targetWord={targetWord} newWordCallback={selectNewWord}></Jogo>
       <Keyboard usedCharacters={usedCharacters} keyCallback={keyCallback}></Keyboard>
     </StyledApp>

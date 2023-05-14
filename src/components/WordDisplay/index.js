@@ -55,7 +55,7 @@ export default function WordDisplay({targetWord, guessedCharacters, wData}) {
     }
 
     return (
-        <TextDisplay $finished={wDataConsumer()}>
+        <TextDisplay data-test="word" $finished={wDataConsumer()}>
             {genWordDisplay()}
         </TextDisplay>
     )
